@@ -21,7 +21,7 @@ namespace week_08
             routes.MapRoute(
                   name: "MyCustomRoute",
                   url: "Demo/{action}/{id}",
-                  defaults: new { action = "Index", id = UrlParameter.Optional }
+                  defaults: new { action = "Customer", id = UrlParameter.Optional }
 
     );
         }

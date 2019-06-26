@@ -1,7 +1,17 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<h2>HTML Helper Controler</h2>
+<table border="1">
+    <tr><td>Name </td><td>@Html.TextBox("Name")</td></tr>
+    <tr><td>Address </td><td>@Html.TextArea("Address")</td></tr>
+    <tr><td>Language </td><td>Tamil @Html.CheckBox("Tamil") English @Html.CheckBox("English")</td></tr>
+    <tr>
+        <td>Gender </td>
+        <td>
+            Male @Html.RadioButton("Gender", "Male") Female @Html.RadioButton("Gender", "Female")
+        </td>
+    </tr>
+</table>
 
 <p>Use this area to provide additional information.</p>
